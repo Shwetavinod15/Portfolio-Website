@@ -218,6 +218,28 @@ h1 {
 			}
 		}
 	}
+	
+
+	@media screen and (max-width: 500px) {
+		.hero-yellow {
+			flex:1;
+			background-color: var(--yellow);
+			border-radius:30px;
+			padding:10px 0px;
+			display:flex;
+			justify-content:center;
+			align-items:flex-end;
+			img {
+				margin-top:-105px;
+				max-width:420px;
+				margin-bottom:-10px;
+			}
+		}
+}
+
+
+@media screen and (min-width: 501px)  and (max-width: 3900px) {
+	
 	.hero-yellow {
 		flex:1;
 		background-color: var(--yellow);
@@ -227,12 +249,13 @@ h1 {
 		justify-content:center;
 		align-items:flex-end;
 		img {
-			margin-top:-500px;
+			margin-top:-512px;
 			max-width:420px;
 			margin-bottom:-10px;
 		}
 	}
 }
+
 
 .logos {
 	background-color: var(--base-100);
