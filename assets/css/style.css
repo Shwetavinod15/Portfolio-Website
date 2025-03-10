@@ -1208,6 +1208,77 @@ form .button-area {
 }
 /* common media queries ends*/
 
+/* Certifications Section */
+.certifications {
+  min-height: 70vh;
+  background: linear-gradient(to bottom, #57059e, #4a00e0); /* Same background as skills */
+}
+.certifications h2 {
+  color: #fff; /* White heading */
+}
+.certifications .heading span {
+  color: rgb(255, 230, 0); /* Same yellow highlight */
+}
+.certifications .container {
+  background: rgba(0, 0, 22, 0.4);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2rem;
+  width: 90%;
+  margin: auto;
+  margin-top: 2rem;
+}
+.certifications .container .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  justify-content: center; /* Centers content horizontally */
+}
+.certifications .container .card {
+  width: 250px;  /* Controls the size of each certification */
+  padding: 15px;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 22, 0.9);
+  transition: 0.2s;
+  text-align: center; /* Center text and content */
+}
+.certifications .container .card:hover {
+  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+.certifications .container .card img {
+    display: block;
+    width: 120px;          /* Consistent width */
+    height: 120px;         /* Consistent height */
+    object-fit: contain;   /* Ensures the entire image fits without distortion */
+    margin: 0 auto 1rem auto; /* Centers the image */
+    background-color: transparent; /* Removes unnecessary background */
+    border-radius: 10px;   /* Slight rounding for a modern look (optional) */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for depth */
+}
+
+
+.certifications .container .card .info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.certifications .container .card .info span {
+  font-size: 1.2rem;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+.certifications .container .card .info .date {
+  font-size: 1rem;
+  color: #ffeb3b; /* Date color to match your yellow theme */
+}
+
+
+
 /* scroll top starts */
 #scroll-top {
   position: fixed;
@@ -1225,3 +1296,4 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
